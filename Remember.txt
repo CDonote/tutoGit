@@ -1,0 +1,28 @@
+1) git init ==> Initialiser le projet (après avoir créer son fichier HTML)
+2) git config --global user.name 'CDonote'
+3) git config --global user.mail 'cedric.donote@gmail.com'
+
+
+git rm --cached index.html ==> Enlève le fichier index de la pré-sauvegarde
+git rm -r --cached . ==> Enlève tous les fichiers présents dans le dossier où l'on se situe
+
+git status ==> Liste les fichiers présents dans la branch où l'on se situe
+
+git add . ==> Ajoute tous le dossier de travail
+git add *.html *.css ==> Ajouter tous les fichiers avec les extensions HTML et CSS
+
+touch 'index.html' ==> Création du fichier HTML
+
+git checkout -- . ==> Permet de retrouver les fichiers précédement supprimé. (commande pour un retour en arrière)
+git checkout 'master' ==> Aller sur la branche master
+git checkout --list ==> Visualiser les listes des branches
+git branch --list ==> Visualier la branche actuel et la liste des dépendances dans cette branche
+git merge fichierJS ==> Fusion de la banche Fichier JS avec la branche master
+
+git commit ==> permet de sauvegarder ces fichiers
+	Méthode ==> taper la touche 'i' jusqu'à apparition de INSERT. Ensuite donner un nom à votre sauvegarde et cliquer sur 'échap'
+		    puis tappez au clavier 'wq' pour write and quit.
+
+git ignore ==> Tous les fichiers qui seront dans ce dossier gitingnore seront ignoré lors d'un commit ou un status
+
+Sur l'éditeur on va dans le dossier ignore et on tape .idea/
